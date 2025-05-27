@@ -1,0 +1,142 @@
+@article{lattice-estimator,
+  author    = {Martin R. Albrecht and Rachel Player and Sam Scott},
+  title     = {On the Concrete Hardness of Learning with Errors},
+  journal   = {Journal of Mathematical Cryptology},
+  volume    = {9},
+  number    = {3},
+  pages     = {169--203},
+  year      = {2015},
+  month     = {October},
+  doi       = {10.1515/jmc-2015-0016},
+  issn      = {1862-2984},
+  eissn     = {1862-2976}
+}
+
+
+@inproceedings{how-not-to-instantiate,
+  title={How (not) to instantiate ring-LWE},
+  author={Peikert, Chris},
+  booktitle={International Conference on Security and Cryptography for Networks},
+  pages={411--430},
+  year={2016},
+  organization={Springer}
+}
+
+@techreport{FrodoKEM,
+  title        = {FrodoKEM: Learning With Errors Key Encapsulation Preliminary Standardization Proposal},
+  author       = {Erdem Alkim and Joppe W. Bos and Léo Ducas and Lewis Glabush and Patrick Longa and Ilya Mironov and Michael Naehrig and Valeria Nikolaenko and Chris Peikert and Ananth Raghunathan and Douglas Stebila and Karen Easterbrook and Brian LaMacchia},
+  institution  = {FrodoKEM Team},
+  year         = {2023},
+  month        = {March},
+  url          = {https://frodokem.org/files/FrodoKEM-standard_proposal-20230314.pdf}
+}
+
+@inproceedings{nizk,
+  title={BLOOM: bimodal lattice one-out-of-many proofs and applications},
+  author={Lyubashevsky, Vadim and Nguyen, Ngoc Khanh},
+  booktitle={International Conference on the Theory and Application of Cryptology and Information Security},
+  pages={95--125},
+  year={2022},
+  organization={Springer}
+}
+@inproceedings{blind-signature,
+author = {Beullens, Ward and Lyubashevsky, Vadim and Nguyen, Ngoc Khanh and Seiler, Gregor},
+title = {Lattice-Based Blind Signatures: Short, Efficient, and Round-Optimal},
+year = {2023},
+isbn = {9798400700507},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3576915.3616613},
+doi = {10.1145/3576915.3616613},
+abstract = {We propose a 2-round blind signature protocol based on the random oracle heuristic and the hardness of standard lattice problems (Ring/Module-SIS/LWE and NTRU) with a signature size of 20 KB. The protocol is round-optimal and has a transcript size that can be as small as 60 KB. This blind signature is around 4 times shorter than the most compact lattice-based scheme based on standard assumptions of del Pino and Katsumata (Crypto 2022) and around 2 times shorter than the scheme of Agrawal et al. (CCS 2022) based on their newly-proposed one-more-ISIS assumption. We also propose a "keyed-verification'' blind signature scheme in which the verifier and the signer need to share a secret key. This scheme has a smaller signature size of only 48 bytes, but further work is needed to explore the efficiency of its signature generation protocol.},
+booktitle = {Proceedings of the 2023 ACM SIGSAC Conference on Computer and Communications Security},
+pages = {16–29},
+numpages = {14},
+keywords = {blind signatures, lattice-based cryptography, post-quantum cryptography},
+location = {<conf-loc>, <city>Copenhagen</city>, <country>Denmark</country>, </conf-loc>},
+series = {CCS '23}
+}
+
+@misc{dilithium-spec,
+  author       = {Léo Ducas and Tancrede Lepoint and Vadim Lyubashevsky and Peter Schwabe and Gregor Seiler and Damien Stehlé},
+  title        = {{CRYSTALS} -- {D}ilithium: Digital Signatures from Module Lattices},
+  howpublished = {Cryptology ePrint Archive, Paper 2017/633},
+  year         = {2017}
+}
+
+@inproceedings{kyber-spec,
+  author    = {Joppe Bos et al.},
+  title     = {{CRYSTALS} - {K}yber: A {CCA}-Secure Module-Lattice-Based {KEM}},
+  booktitle = {IEEE European Symposium on Security and Privacy},
+  address   = {London, UK},
+  pages     = {353--367},
+  year      = {2018}
+}
+
+
+@misc{falcon20,
+  author       = {Pierre-Alain Fouque et al.},
+  title        = {{FALCON}: Fast-Fourier Lattice-based Compact Signatures over {NTRU}},
+  howpublished = {\url{https://falcon-sign.info/}},
+  note         = {(accessed on 15 February 2025)},
+  year         = {2020}
+}
+
+% NOTE: Ring SIS is proposed as cyclic lattices.
+% later at ring-lwe-1 is proposed as it is used today.
+@article{ring-sis,
+  title={Generalized compact knapsacks, cyclic lattices, and efficient one-way functions},
+  author={Micciancio, Daniele},
+  journal={Computational Complexity},
+  volume={16},
+  pages={365--411},
+  year={2007},
+  publisher={Springer}
+}
+
+@article{ring-lwe-1,
+  author    = {Vadim Lyubashevsky and Chris Peikert and Oded Regev},
+  title     = {On Ideal Lattices and Learning with Errors over Rings},
+  journal   = {Journal of the ACM},
+  volume    = {60},
+  number    = {6},
+  pages     = {43:1--43:35},
+  year      = {2013},
+  note      = {Preliminary version in Eurocrypt 2010}
+}
+
+@inproceedings{ring-lwe-2,
+  author    = {Vadim Lyubashevsky and Chris Peikert and Oded Regev},
+  title     = {A Toolkit for Ring-{LWE} Cryptography},
+  booktitle = {Advances in Cryptology -- EUROCRYPT 2013},
+  editor    = {Thomas Johansson and Phong Q. Nguyen},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {7881},
+  pages     = {35--54},
+  publisher = {Springer, Heidelberg},
+  year      = {2013}
+}
+
+@article{lwe-problem,
+  author    = {Oded Regev},
+  title     = {On Lattices, Learning with Errors, Random Linear Codes, and Cryptography},
+  journal   = {Journal of the ACM},
+  volume    = {56},
+  number    = {6},
+  pages     = {1--40},
+  year      = {2009},
+  note      = {Preliminary version in STOC 2005}
+}
+
+@article{original-ajtai,
+  author    = {Mikl{\'{o}}s Ajtai},
+  title     = {Generating Hard Instances of Lattice Problems},
+  journal   = {Quaderni di Matematica},
+  volume    = {13},
+  pages     = {1--32},
+  year      = {1996},
+  note      = {Preliminary version in STOC 1996}
+}
+
+
+
