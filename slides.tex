@@ -34,7 +34,7 @@
 \usetheme{default}
 \author{Sergi Simón Balcells}
 \date{2025/04/01}
-\title{A quantum-resistant unlinkable and strongly-unsplittable multi-coupon system}
+\title{A quantum-resistant multi-coupon system}
 \subtitle{\#ProyectosCiber}
 \makeatletter
 \newlength\beamerleftmargin
@@ -63,9 +63,9 @@
 \end{frame}
 
 
-  \begin{frame}{Outline}
-    \tableofcontents
-  \end{frame}
+\begin{frame}{Outline}
+  \tableofcontents
+\end{frame}
 
 \section{Multi-coupon system}
 % TODO: diagrama de com un cupó porta al seguent i 
@@ -75,41 +75,53 @@
 
 \begin{frame}
   \frametitle{Multi-coupon system}
-\begin{figure}
-  \begin{center}
-    \includegraphics[width=0.95\textwidth]{multi-coupon}
-  \end{center}
-  \caption{Schematic of a multi-coupon system}\label{fig:multi-coupon}
-\end{figure}
+  \begin{figure}
+    \begin{center}
+      \includegraphics[width=0.95\textwidth]{multi-coupon}
+    \end{center}
+    \caption{Schematic of a multi-coupon system}\label{fig:multi-coupon}
+  \end{figure}
 \end{frame}
 
 \begin{frame}
   \frametitle{Multi-coupon redeem}
-\begin{figure}
-  \begin{center}
-    \includegraphics[width=0.95\textwidth]{redeem-token}
-  \end{center}
-  \caption{Redeem token with the issuer.}\label{fig:redeem-token}
-\end{figure}
+  \begin{figure}
+    \begin{center}
+      \includegraphics[width=0.95\textwidth]{redeem-token}
+    \end{center}
+    \caption{Redeem token with the issuer.}\label{fig:redeem-token}
+  \end{figure}
 \end{frame}
 
 \section{Privacy Questions}
 % TODO: cita in-proceedings ?
 \begin{frame}{Privacy Requirements}
- \begin{enumerate}
-   \item The multi-coupon system is \alert{strongly unsplittable}.
-     \pause
-   \item The tokens redeemed are \alert{unlinkable}.
-     \pause
-   \item The tokens are \alert{unforgeable}.
-     \pause
-   \item The employed cryptography is \alert{quantum-resistant}.
- \end{enumerate}
+  \begin{enumerate}
+    \item The multi-coupon system is \alert{strongly unsplittable}.
+      \pause
+    \item The tokens redeemed are \alert{unlinkable}.
+      \pause
+    \item The tokens are \alert{unforgeable}.
+      \pause
+    \item The employed cryptography is \alert{quantum-resistant}.
+  \end{enumerate}
 \end{frame}
 
 \section{A Post-Quantum Approach: Results}
 \begin{frame}
+  \frametitle{Building blocks for our approach}
+  \begin{itemize}
+    % TODO: add citation
+    \item Falcon \cite{falcon20}
+    \item NIZK based on BDLOP commitment \cite{nizk}.
+  \end{itemize}
+\end{frame}
+\begin{frame}
   \frametitle{A Post-Quantum Approach: Results}
+  \begin{itemize}
+    \item Python and SageMath implementation.
+    \item Network cost is 0.
+  \end{itemize}
   \begin{table}[!h]
     \caption{Running times in milliseconds (ms) of the procedures composing the multi-coupon system.}\label{tab:results}
     \centering
@@ -124,30 +136,17 @@
       \botrule
     \end{tabular}
   \end{table}
-  \begin{itemize}
-    \item Python and SageMath implementation.
-    \item Network cost is 0.
-  \end{itemize}
 \end{frame}
-
-
-\section{Future Work}
-% TODO: ??? Que falta per fer?
-% - I don't know
-
-
-
-
 \begin{frame}
   \huge{Thanks for your attention}
 \end{frame}
 
-% NOTE: I have no refereces
-% \begin{frame}[allowframebreaks]
-%   \frametitle{References}
-%   \bibliographystyle{apalike}
-%   \bibliography{bib}
-% \end{frame}
+\begin{frame}[allowframebreaks]
+  \frametitle{References}
+  \bibliographystyle{apalike}
+  \bibliography{bib}
+\end{frame}
 
 \end{document}
+
 
